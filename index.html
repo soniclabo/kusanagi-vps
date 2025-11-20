@@ -24,6 +24,11 @@
             <div class="header__logo">
                 <a href="#">KUSANAGI VPS<span class="accent">.</span></a>
             </div>
+            <div class="footer__links">
+                <a href="company.html">運営会社</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">特定商取引法に基づく表記</a>
+            </div>
             <nav class="header__nav">
                 <ul>
                     <li><a href="#problem">お悩み</a></li>
@@ -186,11 +191,11 @@
             <p class="section__desc">お客様のニーズに合わせたプランをご用意しています。</p>
 
             <div class="price__grid">
-                <div class="card price__card recommended">
+                <div class="card price__card">
                     <div class="badge">個人の方におすすめ</div>
                     <h3>個人プラン</h3>
-                    <p class="price-val">¥50,000</p>
-                    <p class="price-desc">NDA（秘密保持契約）なし。<br>基本設定をプロにお任せ。</p>
+                    <p class="price-val">¥50,000<small class="tax-note">＋税</small></p>
+                    <p class="price-desc">NDA締結なし。<br>基本的な高速化設定を網羅。</p>
                     <ul class="price-features">
                         <li><span class="check">✔</span> サーバー構築・KUSANAGI導入</li>
                         <li><span class="check">✔</span> WordPress移行</li>
@@ -201,7 +206,7 @@
                 </div>
                 <div class="card price__card">
                     <h3>ビジネスプラン</h3>
-                    <p class="price-val">¥100,000</p>
+                    <p class="price-val">¥100,000<small class="tax-note">＋税</small></p>
                     <p class="price-desc">NDA締結可能。<br>PageSpeed Insights改善提案付き。</p>
                     <ul class="price-features">
                         <li><span class="check">✔</span> 個人プランの全内容</li>
@@ -229,33 +234,20 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="border-bottom: 1px solid #eee;">
-                                <td style="padding: 20px; font-weight: bold;">初期費用</td>
-                                <td
-                                    style="padding: 20px; text-align: center; font-weight: bold; color: var(--color-primary); font-size: 1.2rem;">
-                                    5万円〜</td>
-                                <td style="padding: 20px; text-align: center;">15万円〜</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #eee;">
-                                <td style="padding: 20px; font-weight: bold;">月額費用</td>
-                                <td
-                                    style="padding: 20px; text-align: center; font-weight: bold; color: var(--color-primary);">
-                                    0円<br><span style="font-size:0.8rem; font-weight:normal;">(サーバー実費のみ)</span></td>
-                                <td style="padding: 20px; text-align: center;">5万円〜</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #eee;">
-                                <td style="padding: 20px; font-weight: bold;">サーバー移管代行</td>
-                                <td
-                                    style="padding: 20px; text-align: center; font-weight: bold; color: var(--color-primary);">
-                                    無料コミコミ</td>
-                                <td style="padding: 20px; text-align: center;">別途 3万円〜</td>
+                            <tr>
+                                <th>初期費用</th>
+                                <td class="highlight">0円</td>
+                                <td>30,000円〜</td>
                             </tr>
                             <tr>
-                                <td style="padding: 20px; font-weight: bold;">SSL化対応</td>
-                                <td
-                                    style="padding: 20px; text-align: center; font-weight: bold; color: var(--color-primary);">
-                                    無料</td>
-                                <td style="padding: 20px; text-align: center;">有料の場合あり</td>
+                                <th>料金</th>
+                                <td class="highlight">5万円〜</td>
+                                <td>15万円〜</td>
+                            </tr>
+                            <tr>
+                                <th>サーバー移管</th>
+                                <td class="highlight">無料</td>
+                                <td>有料の場合あり</td>
                             </tr>
                         </tbody>
                     </table>
