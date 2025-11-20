@@ -521,6 +521,16 @@ img {
     font-weight: 900;
     margin: 20px 0 10px;
     font-family: var(--font-main);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tax-note {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--color-text-muted);
 }
 
 .price-val .small {
