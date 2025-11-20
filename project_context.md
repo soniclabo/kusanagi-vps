@@ -45,3 +45,4 @@
 *   **Repository**: [soniclabo/kusanagi-vps](https://github.com/soniclabo/kusanagi-vps)
 *   **Git User**: soniclabo
 *   **Git Email**: nako@3bet.co.jp
+*   **Contact Form**: Formspree (Endpoint: `https://formspree.io/f/xgvdplla`)

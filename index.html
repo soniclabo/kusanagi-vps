@@ -350,22 +350,22 @@
                 無理な勧誘は一切いたしません。
             </p>
 
-            <form class="contact__form" onsubmit="event.preventDefault(); alert('デモサイトのため送信されません。');">
+            <form class="contact__form" action="https://formspree.io/f/xgvdplla" method="POST">
                 <div class="form-group">
                     <label for="name">お名前</label>
-                    <input type="text" id="name" placeholder="山田 太郎" required>
+                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
                 </div>
                 <div class="form-group">
                     <label for="email">メールアドレス</label>
-                    <input type="email" id="email" placeholder="example@kusanagi-vps.com" required>
+                    <input type="email" id="email" name="email" placeholder="example@kusanagi-vps.com" required>
                 </div>
                 <div class="form-group">
                     <label for="url">対象サイトURL</label>
-                    <input type="url" id="url" placeholder="https://your-site.com">
+                    <input type="url" id="url" name="url" placeholder="https://your-site.com">
                 </div>
                 <div class="form-group">
                     <label for="message">ご相談内容</label>
-                    <textarea id="message" rows="5" placeholder="現在の悩みや、ご希望のプランなどをご記入ください。"></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="現在の悩みや、ご希望のプランなどをご記入ください。"></textarea>
                 </div>
                 <button type="submit" class="btn btn--primary btn--lg btn--full">送信する</button>
             </form>
