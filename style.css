@@ -729,11 +729,98 @@ img {
 
 /* Footer */
 .footer {
-    padding: 40px 0;
-    text-align: center;
+    padding: 60px 0;
+    background-color: #f8f9fa;
     border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--color-text);
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer__links a {
     color: var(--color-text-muted);
     font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--color-primary);
+}
+
+.copyright {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* Comparison Table */
+.comparison-section {
+    margin-top: 80px;
+}
+
+.comparison-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    min-width: 600px;
+    /* Ensure it doesn't get too squished on mobile */
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table thead th {
+    background: #f8fafc;
+    border-bottom: 2px solid #e1e4e8;
+    font-weight: 700;
+}
+
+.comparison-table th:first-child {
+    text-align: left;
+    width: 30%;
+}
+
+.comparison-table th.highlight-header {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    width: 35%;
+}
+
+.comparison-table th.competitor-header {
+    color: #666;
+    width: 35%;
+}
+
+.comparison-table td.highlight {
+    font-weight: bold;
+    color: var(--color-primary);
+    background-color: #f0f9ff;
 }
 
 /* Responsive */
@@ -758,5 +845,10 @@ img {
 
     .speed-visual {
         height: 300px;
+    }
+
+    .footer__links {
+        flex-direction: column;
+        gap: 16px;
     }
 }
